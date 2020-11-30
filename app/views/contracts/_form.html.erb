@@ -1,0 +1,77 @@
+<%= form_with(model: contract, local: true) do |form| %>
+  <% if contract.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(contract.errors.count, "error") %> prohibited this contract from being saved:</h2>
+
+      <ul>
+        <% contract.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :place %>
+    <%= form.text_field :place %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nacionality %>
+    <%= form.text_field :nacionality %>
+  </div>
+
+  <div class="field">
+    <%= form.label :profession %>
+    <%= form.text_field :profession %>
+  </div>
+
+  <div class="field">
+    <%= form.label :academy_degree %>
+    <%= form.text_field :academy_degree %>
+  </div>
+
+  <div class="field">
+    <%= form.label :university %>
+    <%= form.text_field :university %>
+  </div>
+
+  <div class="field">
+    <%= form.label :departament %>
+    <%= form.text_field :departament %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dpi %>
+    <%= form.text_field :dpi %>
+  </div>
+
+  <div class="field">
+    <%= form.label :age %>
+    <%= form.number_field :age %>
+  </div>
+
+  <div class="field">
+    <%= form.label :marital_status %>
+    <%= form.text_field :marital_status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.text_field :phone %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
