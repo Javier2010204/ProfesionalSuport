@@ -11,67 +11,78 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :place %>
-    <%= form.text_field :place %>
+  <div class="form-group">
+    <%= form.label 'Lugar' %>
+    <%= form.text_field :place, class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+  <div class="form-group">
+    <%= form.label 'Nombre completo' %>
+    <%= form.text_field :name, class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :nacionality %>
-    <%= form.text_field :nacionality %>
+  <div class="form-group">
+    <%= form.label 'Nacionalidad' %>
+    <%= form.text_field :nacionality, class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :profession %>
-    <%= form.text_field :profession %>
+  <div class="form-group">
+    <%= form.label 'Profesión' %>
+    <%= form.text_field :profession, class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :academy_degree %>
-    <%= form.text_field :academy_degree %>
+  <div class="form-group">
+    <%= form.label 'Grado académico' %>
+    <% grados = ['Licenciatura', 'Maestria', 'Doctorado', 'Postgrado']%>
+    <%= form.select(:academy_degree, grados, {:prompt => "Seleccione uno"}, class: 'form-control', include_blank: false) %>
   </div>
 
-  <div class="field">
-    <%= form.label :university %>
-    <%= form.text_field :university %>
+  <div class="form-group">
+    <%= form.label 'Universidad' %>
+    <%= form.text_field :university, class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :departament %>
-    <%= form.text_field :departament %>
+  <div class="form-group">
+    <%= form.label 'Departamento al que aplica' %>
+    <% opciones = ['Editor(revisar ortografia, adecuar a manuales, revision de plagio, etc)', 'Investigador(genera información academica através de la investigación)']%>
+    <%= form.select(:departament, opciones, {:prompt => "Seleccione uno"}, class: 'form-control', include_blank: false)%>
   </div>
 
-  <div class="field">
-    <%= form.label :dpi %>
-    <%= form.text_field :dpi %>
+  <div class="form-group">
+    <%= form.label 'Numero de documento de identificacion personal'%>
+    <%= form.text_field :dpi, class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :age %>
-    <%= form.number_field :age %>
+  <div class="form-group">
+    <%= form.label 'Edad' %>
+    <%= form.number_field :age, class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :marital_status %>
-    <%= form.text_field :marital_status %>
+  <div class="form-group">
+    <%= form.label 'Estado civil' %>
+    <%= form.text_field :marital_status, class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
+  <div class="form-group">
+    <%= form.label 'Correo electrónico'%>
+    <%= form.text_field :email, class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :phone %>
-    <%= form.text_field :phone %>
+  <div class="form-group">
+    <%= form.label 'Número de teléfono' %>
+    <%= form.text_field :phone, class: 'form-control' %>
+  </div>
+  
+  <div>
+    <h2 class="medum-text">Terminos y condiciones</h2>
+    <p class="text-justify small-text">Professional Support será denominado como: “La empresa” o “El empleador” o “el contratante” y el profesional será denominado: TELETRABAJADOR, El PROFESIONAL O COLABORADOR quien ha convenido de manera voluntaria firmar el presente acuerdo, denominado “Términos y condiciones de Teletrabajo.” El TELETRABAJADOR, manifiesta que de manera voluntaria a accedido a practicar esta modalidad laboral, y pasará a ostentar la calidad de Teletrabajador, de conformidad con la Ley. Este pacto se constituye como complementario sobre condiciones especiales en que se debe desarrollar el Teletrabajo de conformidad con la Ley. Primero. Objeto. El PROFESIONAL O COLABORADOR, de manera independiente, sin subordinación o dependencia, en el lugar que éste decida, utilizando sus propios medios, elementos de trabajo, prestará los servicios de elaboración de investigaciones académicas que le sean solicitadas o asignadas por EL CONTRATANTE comprometiéndose a plasmar en dichos estudios académicos sus conocimientos en el área de su profesión o estudio tomando en cuenta que en cualquier caso de violación a los Derechos de Autor será el único responsable de las sanciones estipuladas en la legislación aplicable. Segundo. Plazo. Este pacto de prestación de servicios profesionales se extenderá por un periodo de un año. Si El PROFESIONAL O COLABORADOR tuviese bajo su responsabilidad la entrega de cualquier trabajo académico pactado como asignación y este incumpliera deberá afrontar los cargos civiles y/o penales de conformidad con la Ley. Los trabajos asignados a El PROFESIONAL O COLABORADOR que sean entregados de forma parcial, incompletos o sin observar estrictamente las instrucciones de EL CONTRATANTE se considerarán no entregados y por lo tanto se procederá como se ha estipulado en este punto para el caso de incumplimiento. Tercero. Honorarios. El CONTRATANTE se obliga a pagar a El PROFESIONAL O COLABORADOR en concepto de honorarios por sus servicios profesionales el valor resultante del trabajo académico desarrollado, tomando en cuenta la calidad y entrega puntual del mismo. El monto de los honorarios a pagar será pactado entre las partes antes del incio del trabajo de investigación que corresponda. Forma de pago. Los trabajos que llenen todos los requisitos de forma, fondo y tiempo de entrega serán aprobados y pagados por EL CONTRATANTE el último día hábil cada mes. La forma de pago será mediante depósito en cuenta bancaria en la moneda que corresponde, de cualquier entidad bancaria del sistema y a nombre de El PROFESIONAL O COLABORADOR. En caso de que la calidad del trabajo no cumpla con los cánones que cada investigación requiera El PROFESIONAL O COLABORADOR deberá corregir dicho trabajo académico inmediatamente y en caso contrario dicho trabajo no será remunerado. Cuarto. Incumplimiento. Si EL PROFESIONAL O COLABORADOR no entregase el trabajo académico pactado en la fecha solicitada se iniciará un proceso legal en contra de EL PROFESIONAL O COLABORADOR de conformidad con la Ley. Absolutamente todas las asignaciones y entregas de trabajos serán vía correo electrónico o entregadas a través de la plataforma de la empresa, por lo cual EL PROFESIONAL O COLABORADOR deberá estar muy pendiente de su cuenta de correo electrónico o su cuenta dentro de la plataforma ya que es a través de éste que hará las asignaciones y requerimientos EL CONTRATANTE o los clientes de este. Quinto. Prórroga. Si EL PROFESIONAL O COLABORADOR considerare que necesita más tiempo del pactado inicialmente deberá solicitarlo a EL CONTRATANTE dentro de las veinticuatro horas posteriores a la asignación y en tal caso se deberá pactar una nueva fecha de entrega. Sexto. Obligaciones de EL CONTRATANTE. Son obligaciones de CONTRATANTE: 1. Obrar con seriedad y diligencia en el servicio contratado, cumpliendo con todo lo pactado en este instrumento. 2. Atender las solicitudes y recomendaciones que haga EL PROFESIONAL O COLABORADOR con la mayor prontitud. Séptimo. Obligación de pagos. Son obligaciones de EL CONTRATANTE: 1. Pagar los honorarios fijados para EL PROFESIONAL O COLABORADOR para lo cual EL CONTRATANTE deberá aprobar o desaprobar un trabajo en un plazo máximo de quince días. Si el trabajo es desaprobado EL PROFESIONAL O COLABORADOR deberá corregir los errores y se computarán de nuevo los plazos según lo indique EL CONTRATANTE. En caso de no hacerlo no se procederá al pago de honorarios que se haya pactado y si EL CONTRATANTE ya hubiese pagado los honorarios, éste podrá requerir el reembolso de lo pagado a EL PROFESIONAL O COLABORADOR. Octavo. Terminación anticipada o anormal. Incumplir las obligaciones propias de cada una de las partes, dará lugar a la otra para terminar unilateralmente el presente pacto de teletrabajo. Noveno. Propiedad intelectual y derechos de autor. Las partes acuerdan que una vez pagado el servicio de elaboración de investigaciones académicas estas quedan como propiedad de EL CONTRATANTE por lo que EL PROFESIONAL O COLABORADOR renuncia a derechos de autor cediendo todos los derechos de Propiedad intelectual e industrial que se generen en virtud del presente acuerdo. El teletrabajador no tendrá las facultades de podrá realizar actividad alguna de uso, reproducción, comercialización, comunicación pública o transformación sobre el resultado de sus funciones, ni tendrá derecho a ejercitar cualquier otro derecho, sin la previa autorización expresa del Empleador. Décimo. Cláusula compromisoria. Toda controversia o diferencia relativa a este convenio, su ejecución y liquidación, se resolverá por un Tribunal de Arbitraje que por economía será designado por las partes y será del domicilio donde se encuentra la sede de EL CONTRATANTE. En todo caso, este pacto presta mérito ejecutivo por ser una obligación clara, expresa y exigible para las partes. Undécimo. Confidencialidad. EL PROFESIONAL O COLABORADOR se obliga a no divulgar, compartir, facilitar, vender o enajenar de cualquier forma todo tipo de información, datos o documentación de cualquier índole correspondientes a los clientes de EL CONTRATANTE o que EL CONTRATANTE le facilite. Queda totalmente prohibido el intercambio de datos personales entre EL PROFESIONAL O COLABORADOR y el o los clientes de EL CONTRATANTE. Duodécimo. Vigencia. El presente entra en vigor inmediatamente de aceptado este por EL PROFESIONAL. Decimotercero. Violación de los Derechos de Autor. EL PROFESIONAL será el único responsable penal o civilmente en los casos en los que éste violente de cualquier forma los Derechos de Autor en cada trabajo que entregue a EL CONTRATANTE. EL PROFESIONAL se encuentra bien enterado de los efectos que conlleva el llamado plagio, mutilación de textos que no sean de su autoría y sin autorización de conformidad con Ley aplicable por lo que cualquier anomalía de este tipo tendrá las consecuencias legales que correspondan en su contra desligando totalmente a EL CONTRATANTE de dichas consecuencias. Decimocuarto. Derechos del Teletrabajador. El teletrabajador tendrá derecho a disfrutar de los derechos respectivos, descansos, vacaciones, como el resto de los empleados de la empresa que desempeñen sus tareas mediante presencia física en la empresa. Decimoquinto. Control y supervisión. El EMPLEADOR controlará y supervisará la actividad del teletrabajador mediante medios telemáticos, informáticos y electrónicos. El Teletrabajador consiente libremente realizar reuniones a través de videoconferencias con el empleador y que en ningún caso se entiende como violación del domicilio privado. Decimosexto. Medidas de Seguridad y Previsión de Riesgos en el Teletrabajo. El teletrabajador autoriza al Empleador visitas periódicas a su domicilio que permitan comprobar si el lugar de trabajo es seguro y está libre de riesgos, de igual forma autoriza las visitas asistencia para actividades de salud ocupacional. No obstante, el Teletrabajador, debe cumplir las condiciones especiales sobre la prevención de riesgos laborales de conformidad con la Ley. Me declaro enterado del objeto, validez y contenido del presente pacto por lo que lo acepto.</p>
+  </div>
+  <div class: 'form-check'>
+    <%= form.label 'he leido y acepto los terminos y condiciones'%>
+    <%= form.check_box :confirmation%>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit 'Enviar Contrato', class: 'btn btn-primary btn-lg'%>
   </div>
 <% end %>

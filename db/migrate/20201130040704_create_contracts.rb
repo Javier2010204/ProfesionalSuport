@@ -14,6 +14,7 @@ class CreateContracts < ActiveRecord::Migration[6.0]
       t.string :email
       t.string :phone
       t.text :body
+      t.boolean :confirmation, default: true
 
       t.timestamps
     end

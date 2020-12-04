@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2020_11_30_040704) do
     t.string "email"
     t.string "phone"
     t.text "body"
+    t.boolean "confirmation", default: true
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

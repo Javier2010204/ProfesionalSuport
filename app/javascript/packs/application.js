@@ -24,5 +24,7 @@ import '../css/app.scss'
 
 var jQuery = require('jquery')
 
+const images = require.context('../images', true)
+
 global.$ = global.jQuery = jQuery;
 window.$ = window.jQuery = jQuery;
