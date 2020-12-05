@@ -1,1 +1,11 @@
-<h1>Correo enviado con exito</h1>
+<div class="email--background" style="background: #eee; padding: 10px; text-align: center;">
+    <div class="email--container" style="max-width: 500px; background: #fff; margin: 0 auto;overflow: hidden; border-radius: 5px;">
+        <img src="https://res.cloudinary.com/dvyggfmnj/image/upload/v1607184790/logo_cxyasf.jpg" style="max-width: 100%; display: block;">
+
+        <div class="email--inner-container" style="padding: 0 5% 40px;">
+            <p style="font-size: 16px; line-height: 1.5; color: #000;margin-bottom: 30px;">Estimado(a): <span><%= @contract.name %></span> gracias por su confianza, usted ha aceptado los términos y condiciones de nuestro contrato, ahora puede descargar una versión física del mismo.</p>
+            <%= link_to 'Descargar contrato', "https://res.cloudinary.com/dvyggfmnj/image/upload/v1607188279/contrato_gdz5ul.pdf", style:"display: inline-block;padding: 10px 20px;color: #fff;background: #373629;text-decoration: none;letter-spacing: 2px;text-transform: uppercase;border-radius: 5px;font-size: 13px;" %>
+        </div>
+    </div>
+</div>
+
