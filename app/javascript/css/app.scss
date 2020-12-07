@@ -7,8 +7,11 @@ html, body{
 }
 
 a{
-    display: block;
-    
+    display: block;  
+}
+
+.top-space{
+    margin-top: 1em;
 }
 
 #logo{
@@ -18,7 +21,7 @@ a{
     background-color: yellow; 
     border-radius: 50%;
     top: -100px;
-    left: 37pp0px;
+    left: 370px;
     background-image: url('~logo.jpeg');
     background-position: center;
     background-size: cover;
@@ -40,6 +43,10 @@ a{
     border-radius: 25px;
 }
 
+.radius--btn{
+    border-radius: 0 0 10px 10px;
+}
+
 .full-height{
     height: 100vh;
 }
@@ -54,4 +61,8 @@ a{
 
 .small-text{
     font-size: 1em;
+}
+
+.bold{
+    font-weight: bold;
 }

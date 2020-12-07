@@ -1,0 +1,4 @@
+es:
+  errors:
+    messages:
+      blank: "Por favor llene el campo lugar"

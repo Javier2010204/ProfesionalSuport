@@ -1,7 +1,7 @@
 <%= form_with(model: contract, local: true) do |form| %>
   <% if contract.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(contract.errors.count, "error") %> prohibited this contract from being saved:</h2>
+    <div id="error_explanation" class="alert alert-danger">
+      <h2><%= pluralize(contract.errors.count, "errores") %> evitaron que se enviara el formulario:</h2>
 
       <ul>
         <% contract.errors.full_messages.each do |message| %>
@@ -82,7 +82,7 @@
     <%= form.check_box :confirmation%>
   </div>
 
-  <div class="actions">
-    <%= form.submit 'Enviar Contrato', class: 'btn btn-primary btn-lg'%>
+  <div class="actions p-5">
+    <%= form.submit 'Enviar Contrato', class: 'btn btn-primary btn-block'%>
   </div>
 <% end %>
