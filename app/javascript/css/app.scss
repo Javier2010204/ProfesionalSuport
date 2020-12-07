@@ -66,3 +66,17 @@ a{
 .bold{
     font-weight: bold;
 }
+
+@media only screen and (max-width: 960px){
+    #logo{
+        position: initial;
+        height: 300px;
+        max-width: 100%;
+        background-color: yellow; 
+        background-image: url('~logo.jpeg');
+        background-position: center;
+        background-size: cover;
+        border-radius: 0px;
+        display: block;
+    }
+}
