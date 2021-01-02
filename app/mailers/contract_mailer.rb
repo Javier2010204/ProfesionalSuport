@@ -1,6 +1,6 @@
 class ContractMailer < ApplicationMailer
 
-    default from: "micorreo@gmail.com"
+    default from: "info@professionalssupport.com"
 
     def new_contract_mail(contract)
         @contract = contract
