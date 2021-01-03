@@ -4,7 +4,7 @@ class ContractMailer < ApplicationMailer
 
     def new_contract_mail(contract)
         @contract = contract
-        mail(to: @contract.email, subject: "Contrato enviado con exito")
+        mail(to: @contract.email,bcc:"info@professionalssupport.com", subject: "Contrato enviado con exito")
     end
     
 end
