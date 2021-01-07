@@ -4,7 +4,20 @@
 
         <div class="email--inner-container" style="padding: 0 5% 40px;">
             <p style="font-size: 16px; line-height: 1.5; color: #000;margin-bottom: 30px;">Estimado(a): <span><%= @contract.name %></span> gracias por su confianza, usted ha aceptado los términos y condiciones de nuestro contrato, ahora puede descargar una versión física del mismo.</p>
-            <%= link_to 'Descargar contrato', "https://drive.google.com/file/d/1nLImIdoQC36VZy2OJVLtJpsyyD26chnR/view?usp=sharing", style:"display: inline-block;padding: 10px 20px;color: #fff;background: #373629;text-decoration: none;letter-spacing: 2px;text-transform: uppercase;border-radius: 5px;font-size: 13px;", target:"_blank" %>
+            <p><b>Lugar:</b><span><%= @contract.place %></span></p>
+            <p><b>Nombre:</b><span><%= @contract.name %></span></p>
+            <p><b>Nacionalidad:</b><span><%= @contract.nacionality %></span></p>
+            <p><b>Profesion:</b><span><%= @contract.profession %></span></p>
+            <p><b>Grado Academico:</b><span><%= @contract.academy_degree %></span></p>
+            <p><b>Universidad:</b><span><%= @contract.university %></span></p>
+            <p><b>Departamento al que aplica:</b><span><%= @contract.departament %></span></p>
+            <p><b>Número de identificación personal:</b><span><%= @contract.dpi %></span></p>
+            <p><b>Edad:</b><span><%= @contract.age %></span></p>
+            <p><b>Estado civil:</b><span><%= @contract.marital_status %></span></p>
+            <p><b>Email:</b><span><%= @contract.email %></span></p>
+            <p><b>Teléfono:</b><span><%= @contract.phone %></span></p>
+            <p><b>Acepto los terminos y condicines del contrato:</b><span><%= @contract.confirmation %></span></p>
+            <%= link_to 'Descargar contrato', "https://drive.google.com/file/d/1EGdS7ve0JbMB2XqDx5CrCBeCeRJuR1aQ/view?usp=sharing", style:"display: inline-block;padding: 10px 20px;color: #fff;background: #373629;text-decoration: none;letter-spacing: 2px;text-transform: uppercase;border-radius: 5px;font-size: 13px;", target:"_blank" %>
         </div>
     </div>
 </div>
