@@ -33,11 +33,11 @@ class Contract < ApplicationRecord
     validates :nacionality, presence: true
     validates :university, presence: true
 
-    after_create :send_mail
+    #after_create :send_mail
 
     def send_mail
         ContractMailer.new_contract_mail(self).deliver_now
     end
-    
-    
+
+
 end
